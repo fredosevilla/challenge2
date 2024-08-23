@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Una aplicación simple para encriptar y desencriptar texto usando reglas personalizadas.">
+    <meta name="keywords" content="encriptar, desencriptar, texto, aplicación web, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Encriptador de Texto</h1>
+    </header>
+
+    <main>
+        <section class="input-section">
+            <label for="input-text">Ingrese el texto aquí</label>
+            <textarea id="input-text" placeholder="Ingresa el texto que deseas encriptar o desencriptar" aria-label="Texto para encriptar o desencriptar"></textarea>
+            <div class="button-group">
+                <button id="encrypt-btn">Encriptar</button>
+                <button id="decrypt-btn">Desencriptar</button>
+            </div>
+            <p class="note">* Solo letras minúsculas y sin acentos</p>
+        </section>
+
+        <section class="output-section">
+            <div id="output-placeholder">
+                <img src="imagen.png" alt="Placeholder Image" id="placeholder-image" />
+                <p id="placeholder-text">Ningún mensaje fue encontrado, Ingrese el texto que deseas encriptar o desencriptar.</p>
+            </div>
+            <div id="output-text-container">
+                <p id="output-text">Ningún mensaje fue encontrado</p>
+            </div>
+            <button id="copy-btn">Copiar</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desarrollado por Alfredo Salomón Sevilla Cruz, 2024</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
